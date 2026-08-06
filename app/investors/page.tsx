@@ -174,21 +174,15 @@ export default function InvestorsPage() {
           <div className="grid gap-10 lg:grid-cols-[0.72fr_1fr] lg:gap-16">
             <SectionHeading
               eyebrow="Retrocession security"
-              title={`${retrocessionSecurityPanel.year} security panel`}
-              description={`Global Re's retrocession protection for the ${retrocessionSecurityPanel.year} underwriting year is effective ${retrocessionSecurityPanel.effectiveDate}, under the leadership of ${retrocessionSecurityPanel.leader}.`}
+              title="Security panel"
+              description={`Global RE's retrocession protection is under the leadership of ${retrocessionSecurityPanel.leader}.`}
             />
             <div className="rounded-lg border border-border bg-card p-6">
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-4">
                 <div>
                   <p className="eyebrow text-muted-foreground">Panel leader</p>
                   <p className="mt-2 font-display text-xl font-bold text-card-foreground">
                     {retrocessionSecurityPanel.leader}
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow text-muted-foreground">Effective date</p>
-                  <p className="mt-2 font-display text-xl font-bold text-card-foreground">
-                    {retrocessionSecurityPanel.effectiveDate}
                   </p>
                 </div>
               </div>
@@ -225,9 +219,6 @@ export default function InvestorsPage() {
               ))}
             </ul>
           </div>
-          <p className="mt-5 max-w-4xl text-xs leading-relaxed text-muted-foreground">
-            Information updated as of 04 August 2026.
-          </p>
         </div>
       </section>
 

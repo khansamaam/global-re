@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, BadgeCheck, CalendarDays, ShieldCheck } from 'lucide-react'
+import { ArrowRight, BadgeCheck, ShieldCheck } from 'lucide-react'
 import { GsapReveal } from '@/components/home/motion'
 import { retrocessionSecurityPanel } from '@/lib/site'
 
@@ -20,11 +20,10 @@ export function SecurityBand() {
           <div>
             <p className="eyebrow text-brand-gold">Retrocession security</p>
             <h2 className="mt-4 max-w-3xl text-balance text-4xl font-bold leading-tight text-on-dark sm:text-5xl">
-              Backed by A-rated security for the 2026 underwriting year.
+              Backed by A-rated security.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-on-dark/72">
-              Global RE's {retrocessionSecurityPanel.year} retrocession protection is
-              effective {retrocessionSecurityPanel.effectiveDate}, under the leadership
+              Global RE's retrocession protection is under the leadership
               of {retrocessionSecurityPanel.leader}.
             </p>
             <Link
@@ -39,7 +38,7 @@ export function SecurityBand() {
 
         <GsapReveal delay={0.1}>
           <div className="rounded-lg border border-white/15 bg-white/[0.07] p-6 shadow-2xl backdrop-blur lg:p-8">
-            <div className="grid gap-px overflow-hidden rounded-md border border-white/15 bg-white/10 sm:grid-cols-3">
+            <div className="grid gap-px overflow-hidden rounded-md border border-white/15 bg-white/10 sm:grid-cols-2">
               <div className="bg-brand-indigo-deep/60 p-5">
                 <ShieldCheck className="size-5 text-brand-gold" aria-hidden="true" />
                 <p className="mt-5 text-xs uppercase tracking-[0.12em] text-on-dark/55">
@@ -47,15 +46,6 @@ export function SecurityBand() {
                 </p>
                 <p className="mt-2 font-display text-lg font-bold text-on-dark">
                   {retrocessionSecurityPanel.leader}
-                </p>
-              </div>
-              <div className="bg-brand-indigo-deep/60 p-5">
-                <CalendarDays className="size-5 text-brand-gold" aria-hidden="true" />
-                <p className="mt-5 text-xs uppercase tracking-[0.12em] text-on-dark/55">
-                  Effective date
-                </p>
-                <p className="mt-2 font-display text-lg font-bold text-on-dark">
-                  {retrocessionSecurityPanel.effectiveDate}
                 </p>
               </div>
               <div className="bg-brand-indigo-deep/60 p-5">
@@ -80,9 +70,6 @@ export function SecurityBand() {
                 </span>
               ))}
             </div>
-            <p className="mt-6 text-xs leading-relaxed text-on-dark/55">
-              Information updated as of 04 August 2026.
-            </p>
           </div>
         </GsapReveal>
       </div>

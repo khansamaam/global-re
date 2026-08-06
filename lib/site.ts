@@ -644,12 +644,6 @@ export const financialYearPortfolio = {
       note: 'Concentrated, opportunistic book',
     },
     {
-      year: '2024',
-      value: 28,
-      valueLabel: 'USD 28M',
-      note: 'Deliberate rebalancing toward quality',
-    },
-    {
       year: '2025',
       value: 33,
       valueLabel: 'USD 33M',
