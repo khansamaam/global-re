@@ -697,7 +697,7 @@ export const previousYearFinancials = {
     },
   ],
   note:
-    'Gross written premium trend reflects Global Re LLC underwriting book: USD 116M in 2023, USD 28M in 2024, and USD 33M in 2025.',
+    'Gross written premium trend reflects Global RE underwriting book: USD 116M in 2023, USD 28M in 2024, and USD 33M in 2025.',
 }
 
 export const companySnapshot = [
@@ -720,25 +720,6 @@ export const companySnapshot = [
     label: 'Footprint',
     value: 'MENA, Africa & Asia',
     note: 'Expanding regional and international reach',
-  },
-]
-
-export const groupCompanies = [
-  {
-    name: 'Global Re Overseas Ltd',
-    description: 'Nevis reinsurance company within the Global Re group.',
-  },
-  {
-    name: 'Global Re LLC',
-    description: 'UAE operating company within the Global Re group.',
-  },
-  {
-    name: 'One Broker World LLC',
-    description: 'UAE-based reinsurance broker within the group.',
-  },
-  {
-    name: 'One Investment Fund SPC Ltd',
-    description: 'BVI investment vehicle within the group.',
   },
 ]
 
@@ -994,5 +975,5 @@ export const offices = [
     role: 'Representative office and meeting address',
     region: 'Middle East',
   },
-  { city: 'Sharjah', role: 'Global RE LLC office', region: 'Middle East' },
+  { city: 'Sharjah', role: 'Global RE office', region: 'Middle East' },
 ]

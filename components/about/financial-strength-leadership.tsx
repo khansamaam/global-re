@@ -10,7 +10,6 @@ import {
   businessLines,
   companySnapshot,
   executiveBoard,
-  groupCompanies,
   industryFocus,
   portfolioScopeStatement,
   site,
@@ -95,28 +94,6 @@ export function FinancialStrengthLeadership() {
             </div>
           </div>
 
-          <div className="mt-12 rounded-lg border border-border bg-muted/35 p-6 lg:p-8">
-            <div className="grid gap-8 lg:grid-cols-[0.45fr_1fr]">
-              <div>
-                <p className="eyebrow text-brand-teal">Group structure</p>
-                <h3 className="mt-3 font-display text-2xl font-bold text-foreground">
-                  Connected reinsurance, broking, and investment capabilities
-                </h3>
-              </div>
-              <ul className="grid gap-4 sm:grid-cols-2">
-                {groupCompanies.map((company) => (
-                  <li key={company.name} className="rounded-md bg-card p-5">
-                    <p className="font-display text-lg font-bold text-card-foreground">
-                      {company.name}
-                    </p>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {company.description}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 
