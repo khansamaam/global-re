@@ -146,20 +146,8 @@ export function FinancialStrengthLeadership() {
               should also consider business scope, exposure quality, wording, and
               claims-handling obligations.
             </p>
-            <dl className="mt-8 grid gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2">
+            <dl className="mt-8 overflow-hidden rounded-lg border border-border bg-border">
               <div className="bg-card p-5">
-                <dt className="eyebrow text-muted-foreground">Headquarters</dt>
-                <dd className="mt-2 font-display text-lg font-bold text-card-foreground">
-                  Nevis
-                </dd>
-              </div>
-              <div className="bg-card p-5">
-                <dt className="eyebrow text-muted-foreground">Rep. office</dt>
-                <dd className="mt-2 font-display text-lg font-bold text-card-foreground">
-                  Dubai, UAE
-                </dd>
-              </div>
-              <div className="bg-card p-5 sm:col-span-2">
                 <dt className="eyebrow text-muted-foreground">Written portfolio</dt>
                 <dd className="mt-2 text-sm leading-relaxed text-card-foreground">
                   Property, Casualty, Engineering, Marine, and Bonds/Surety reinsurance
