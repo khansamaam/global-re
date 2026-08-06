@@ -63,40 +63,31 @@ export function SiteFooter() {
               </span>
             </Link>
             <p className="mt-5 text-sm leading-relaxed opacity-70">
-              {site.legalName} is a Nevis-headquartered global reinsurance firm with a
+              Nevis-headquartered global reinsurance firm with a
               Dubai representative office, focused on treaty and facultative risk
               across defined specialist reinsurance classes.
             </p>
-            <dl className="mt-6 flex flex-col gap-1 text-sm opacity-70">
-              <div className="flex gap-2">
-                <dt className="shrink-0">HQ:</dt>
-                <dd>{site.hq}</dd>
-              </div>
-              <div className="flex gap-2">
-                <dt className="shrink-0">Dubai:</dt>
-                <dd>{site.representativeOffice}</dd>
-              </div>
-              <div className="flex gap-2">
-                <dt className="sr-only">Telephone</dt>
-                <dd>{site.phone}</dd>
-              </div>
-              <div className="flex gap-2">
-                <dt className="sr-only">Email</dt>
-                <dd>
-                  <a className="hover:underline" href={`mailto:${site.email}`}>
-                    {site.email}
-                  </a>
-                </dd>
-              </div>
-              <div className="flex gap-2">
-                <dt className="sr-only">Claims email</dt>
-                <dd>
-                  <a className="hover:underline" href={`mailto:${site.claimsEmail}`}>
-                    {site.claimsEmail}
-                  </a>
-                </dd>
-              </div>
-            </dl>
+            <div className="mt-6 flex flex-col gap-2 text-sm opacity-70">
+              <p>
+                <span className="font-medium">HQ:</span>{' '}
+                {site.hq}
+              </p>
+              <p>
+                <span className="font-medium">Dubai:</span>{' '}
+                {site.representativeOffice}
+              </p>
+              <p className="mt-2">{site.phone}</p>
+              <p>
+                <a className="hover:underline" href={`mailto:${site.email}`}>
+                  {site.email}
+                </a>
+              </p>
+              <p>
+                <a className="hover:underline" href={`mailto:${site.claimsEmail}`}>
+                  {site.claimsEmail}
+                </a>
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-x-10 gap-y-10 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-12">
