@@ -62,7 +62,7 @@ export function AnimatedShowcase() {
         ))}
       </div>
 
-      {/* Center hero metric - Net Premium Income Chart */}
+      {/* Center hero metric - Net Premium Income Line Chart */}
       <Link
         href="#portfolio"
         className="showcase-hero-metric group/hero"
@@ -73,39 +73,82 @@ export function AnimatedShowcase() {
             Net Premium Income
           </p>
 
-          {/* Animated Bar Chart */}
-          <div className="mt-4 flex items-end justify-between gap-3 px-2">
+          {/* Animated Line Chart */}
+          <div className="relative mt-6 h-32 px-4">
+            {/* Grid lines */}
+            <div className="absolute inset-0">
+              {[0, 1, 2, 3].map((i) => (
+                <div
+                  key={i}
+                  className="absolute left-0 right-0 border-t border-white/5"
+                  style={{ top: `${i * 33.33}%` }}
+                />
+              ))}
+            </div>
+
+            {/* SVG Line Path */}
+            <svg
+              className="absolute inset-0 h-full w-full overflow-visible"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+            >
+              {/* Gradient for area under line */}
+              <defs>
+                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stopColor="rgb(52, 211, 153)" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="rgb(52, 211, 153)" stopOpacity="0" />
+                </linearGradient>
+              </defs>
+
+              {/* Area under curve */}
+              <path
+                className="showcase-line-area"
+                d="M 0 84 Q 25 65, 50 50 T 100 70 L 100 100 L 0 100 Z"
+                fill="url(#lineGradient)"
+              />
+
+              {/* Main line */}
+              <path
+                className="showcase-line-path"
+                d="M 0 84 Q 25 65, 50 50 T 100 70"
+                fill="none"
+                stroke="rgb(52, 211, 153)"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+
+            {/* Data points */}
             {[
-              { year: '2024', value: 28, amount: '$28M', color: 'bg-sky-400/60' },
-              { year: '2025', value: 33.4, amount: '$33.4M', color: 'bg-emerald-400/70' },
-              { year: '2026 YTD', value: 18, amount: '$18M', color: 'bg-amber-400/80' },
-            ].map((data, i) => {
-              const heightPercent = (data.value / 33.4) * 100
-              return (
-                <div key={data.year} className="flex flex-1 flex-col items-center gap-2">
-                  <div className="relative w-full">
-                    <div
-                      className={`showcase-chart-bar ${data.color} relative overflow-hidden rounded-t-md transition-all duration-700 ease-out`}
-                      style={{
-                        height: `${heightPercent * 1.2}px`,
-                        animationDelay: `${0.2 + i * 0.15}s`,
-                      }}
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent" />
-                    </div>
-                    <p className="mt-2 text-center font-display text-sm font-bold text-white">
-                      {data.amount}
-                    </p>
+              { x: 0, y: 84, year: '2024', amount: '$28M' },
+              { x: 50, y: 50, year: '2025', amount: '$33.4M' },
+              { x: 100, y: 70, year: '2026', amount: '$18M' },
+            ].map((point, i) => (
+              <div
+                key={point.year}
+                className="showcase-data-point absolute"
+                style={{
+                  left: `${point.x}%`,
+                  top: `${point.y}%`,
+                  animationDelay: `${0.8 + i * 0.2}s`,
+                }}
+              >
+                <div className="relative">
+                  {/* Point circle */}
+                  <div className="absolute -translate-x-1/2 -translate-y-1/2">
+                    <div className="h-3 w-3 rounded-full border-2 border-emerald-400 bg-emerald-400/80 shadow-lg shadow-emerald-400/50" />
                   </div>
-                  <p className="text-center text-[10px] font-medium text-white/40">
-                    {data.year}
-                  </p>
+                  {/* Label */}
+                  <div className="absolute -translate-x-1/2 translate-y-6 whitespace-nowrap text-center">
+                    <p className="text-xs font-bold text-white">{point.amount}</p>
+                    <p className="text-[10px] text-white/40">{point.year}</p>
+                  </div>
                 </div>
-              )
-            })}
+              </div>
+            ))}
           </div>
 
-          <div className="mt-4 flex items-center justify-center gap-1.5 text-emerald-400">
+          <div className="mt-6 flex items-center justify-center gap-1.5 text-emerald-400">
             <TrendingUp className="size-3.5" />
             <span className="text-xs font-semibold tracking-wide">
               +19% YoY Growth
