@@ -70,7 +70,7 @@ export function AnimatedShowcase() {
         <div className="showcase-hero-glow" aria-hidden="true" />
         <div className="relative z-10 w-full">
           <p className="text-xs font-semibold uppercase tracking-wider text-white/50">
-            Net Premium Income
+            Net Premium Income Growth
           </p>
 
           {/* Animated Line Chart */}
@@ -103,26 +103,26 @@ export function AnimatedShowcase() {
               {/* Area under curve */}
               <path
                 className="showcase-line-area"
-                d="M 0 70 Q 25 82, 50 95 T 100 60 L 100 100 L 0 100 Z"
+                d="M 10 70 Q 30 64, 50 60 Q 70 50, 90 35 L 90 100 L 10 100 Z"
                 fill="url(#lineGradient)"
               />
 
               {/* Main line */}
               <path
                 className="showcase-line-path"
-                d="M 0 70 Q 25 82, 50 95 T 100 60"
+                d="M 10 70 Q 30 64, 50 60 Q 70 50, 90 35"
                 fill="none"
                 stroke="rgb(52, 211, 153)"
-                strokeWidth="2"
+                strokeWidth="2.5"
                 strokeLinecap="round"
               />
             </svg>
 
             {/* Data points */}
             {[
-              { x: 0, y: 70, year: '2024', amount: '$24.1M' },
-              { x: 50, y: 95, year: '2025', amount: '$15.1M' },
-              { x: 100, y: 60, year: '2026', amount: '$18.9M' },
+              { x: 10, y: 70, year: '2024', amount: '$24.1M', note: 'Full Year' },
+              { x: 50, y: 60, year: '2025', amount: '$15.1M', note: 'Full Year' },
+              { x: 90, y: 35, year: '2026', amount: '$18.9M', note: 'Projected: $28M+' },
             ].map((point, i) => (
               <div
                 key={point.year}
@@ -142,6 +142,9 @@ export function AnimatedShowcase() {
                   <div className="absolute -translate-x-1/2 translate-y-6 whitespace-nowrap text-center">
                     <p className="text-xs font-bold text-white">{point.amount}</p>
                     <p className="text-[10px] text-white/40">{point.year}</p>
+                    {point.note && (
+                      <p className="text-[9px] text-white/30">{point.note}</p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -151,7 +154,7 @@ export function AnimatedShowcase() {
           <div className="mt-6 flex items-center justify-center gap-1.5 text-emerald-400">
             <TrendingUp className="size-3.5" />
             <span className="text-xs font-semibold tracking-wide">
-              +26% Growth (2026 YTD vs 2025)
+              Strong 2026 momentum - YTD exceeds 2025
             </span>
           </div>
         </div>
