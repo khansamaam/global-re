@@ -43,8 +43,7 @@ export function SiteHeader() {
           <p className="flex min-w-0 items-center gap-2 opacity-80">
             <Globe className="size-3.5 shrink-0" aria-hidden="true" />
             <span className="truncate">
-              Nevis headquarters - Dubai representative office - Specialist treaty
-              and facultative reinsurance
+              Specialist treaty and facultative reinsurance
             </span>
           </p>
           <nav aria-label="Utility" className="flex shrink-0 items-center gap-6">
