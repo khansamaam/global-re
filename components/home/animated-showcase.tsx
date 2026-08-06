@@ -103,14 +103,14 @@ export function AnimatedShowcase() {
               {/* Area under curve */}
               <path
                 className="showcase-line-area"
-                d="M 0 84 Q 25 65, 50 50 T 100 70 L 100 100 L 0 100 Z"
+                d="M 0 70 Q 25 82, 50 95 T 100 60 L 100 100 L 0 100 Z"
                 fill="url(#lineGradient)"
               />
 
               {/* Main line */}
               <path
                 className="showcase-line-path"
-                d="M 0 84 Q 25 65, 50 50 T 100 70"
+                d="M 0 70 Q 25 82, 50 95 T 100 60"
                 fill="none"
                 stroke="rgb(52, 211, 153)"
                 strokeWidth="2"
@@ -120,9 +120,9 @@ export function AnimatedShowcase() {
 
             {/* Data points */}
             {[
-              { x: 0, y: 84, year: '2024', amount: '$28M' },
-              { x: 50, y: 50, year: '2025', amount: '$33.4M' },
-              { x: 100, y: 70, year: '2026', amount: '$18M' },
+              { x: 0, y: 70, year: '2024', amount: '$24.1M' },
+              { x: 50, y: 95, year: '2025', amount: '$15.1M' },
+              { x: 100, y: 60, year: '2026', amount: '$18.9M' },
             ].map((point, i) => (
               <div
                 key={point.year}
@@ -151,7 +151,7 @@ export function AnimatedShowcase() {
           <div className="mt-6 flex items-center justify-center gap-1.5 text-emerald-400">
             <TrendingUp className="size-3.5" />
             <span className="text-xs font-semibold tracking-wide">
-              +19% YoY Growth
+              +26% Growth (2026 YTD vs 2025)
             </span>
           </div>
         </div>
