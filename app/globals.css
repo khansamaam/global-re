@@ -480,14 +480,7 @@
     animation: marquee 28s linear infinite;
   }
 
-  @media (max-width: 768px) {
-    .animate-fade-up,
-    .animate-fade-in-soft {
-      animation: none;
-      opacity: 1;
-      transform: none;
-    }
-  }
+  /* Animations enabled on all screen sizes for better UX */
 
   .home-scroll-page > section {
     opacity: 1;
