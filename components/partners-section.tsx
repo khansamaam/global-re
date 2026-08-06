@@ -9,13 +9,14 @@ import { cn } from '@/lib/utils'
 function PartnerLogo({ partner }: { partner: (typeof partners)[number] }) {
   return (
     <div className="flex shrink-0 flex-col items-center gap-4 px-10">
-      <div className="relative h-20 w-44 sm:h-24 sm:w-52 lg:h-28 lg:w-56">
+      <div className="flex h-24 w-48 items-center justify-center sm:h-28 sm:w-52">
         <Image
           src={partner.logo}
           alt={partner.name}
-          fill
-          className="object-contain"
-          sizes="(max-width: 640px) 220px, (max-width: 1024px) 208px, 224px"
+          width={208}
+          height={112}
+          className="max-h-full w-auto object-contain"
+          sizes="(max-width: 640px) 192px, 208px"
         />
       </div>
       <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
