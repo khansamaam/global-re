@@ -85,7 +85,10 @@ export default function SolutionsPage() {
             {businessLines.map((line, index) => (
               <article
                 key={line.slug}
-                className="grid gap-8 py-12 first:pt-0 lg:grid-cols-12 lg:gap-12"
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                }}
+                className="grid gap-8 py-12 first:pt-0 animate-fade-up lg:grid-cols-12 lg:gap-12"
               >
                 <div className="lg:col-span-4">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
@@ -167,10 +170,13 @@ export default function SolutionsPage() {
             description="Construction, engineering, and energy risks often involve bonds, marine, property, casualty, and technical project exposure at the same time. Global RE treats those connections as part of the underwriting review."
           />
           <div className="mt-14 grid gap-6 md:grid-cols-2">
-            {industryFocus.map((industry) => (
+            {industryFocus.map((industry, index) => (
               <article
                 key={industry.name}
-                className="flex flex-col gap-3 rounded-lg border border-border bg-card p-8"
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="flex flex-col gap-3 rounded-lg border border-border bg-card p-8 animate-fade-up transition-shadow duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 <h3 className="font-display text-xl font-bold text-card-foreground">
                   {industry.name}
@@ -192,10 +198,13 @@ export default function SolutionsPage() {
             description="Capacity is only useful when counterparties know who owns the risk, how claims are handled, and where appetite begins and ends."
           />
           <div className="mt-14 grid gap-6 md:grid-cols-2">
-            {support.map((item) => (
+            {support.map((item, index) => (
               <div
                 key={item.title}
-                className="flex flex-col gap-4 rounded-lg border border-border bg-card p-8"
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="flex flex-col gap-4 rounded-lg border border-border bg-card p-8 animate-fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <span className="flex size-11 items-center justify-center rounded-md bg-brand-teal/12 text-brand-teal">
                   <item.icon className="size-5" aria-hidden="true" />
@@ -220,7 +229,13 @@ export default function SolutionsPage() {
           />
           <ol className="mt-14 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2 lg:grid-cols-4">
             {process.map((item, index) => (
-              <li key={item.step} className="flex flex-col gap-3 bg-card p-8">
+              <li
+                key={item.step}
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                }}
+                className="flex flex-col gap-3 bg-card p-8 animate-fade-up transition-colors duration-300 hover:bg-muted/50"
+              >
                 <span className="font-mono text-sm text-brand-gold">
                   Step {index + 1}
                 </span>

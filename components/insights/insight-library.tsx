@@ -62,8 +62,14 @@ export function InsightLibrary({ insights }: { insights: Insight[] }) {
 
       {filtered.length > 0 ? (
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((insight) => (
-            <li key={insight.slug} className="flex">
+          {filtered.map((insight, index) => (
+            <li
+              key={insight.slug}
+              style={{
+                animationDelay: `${index * 60}ms`,
+              }}
+              className="flex animate-fade-up"
+            >
               <div className="flex flex-1">
                 <InsightCard insight={insight} variant={insight.image ? 'default' : 'compact'} />
               </div>

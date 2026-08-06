@@ -57,20 +57,20 @@ export default async function BusinessLinePage({
 
       <section aria-label="Class at a glance" className="border-b border-border bg-card">
         <dl className="mx-auto grid max-w-7xl grid-cols-1 gap-y-8 px-6 py-12 sm:grid-cols-3 lg:gap-x-8">
-          <div className="flex flex-col gap-1.5 border-brand-gold/60 sm:border-l sm:pl-6">
+          <div className="flex flex-col gap-1.5 border-brand-gold/60 animate-fade-up sm:border-l sm:pl-6">
             <dt className="eyebrow text-muted-foreground">Scope</dt>
             <dd className="font-display text-2xl font-bold text-brand-indigo">
               {line.scope}
             </dd>
             <p className="text-sm text-muted-foreground">Specialist reinsurance class</p>
           </div>
-          <div className="flex flex-col gap-1.5 border-brand-gold/60 sm:border-l sm:pl-6">
+          <div className="flex flex-col gap-1.5 border-brand-gold/60 animate-fade-up animation-delay-100 sm:border-l sm:pl-6">
             <dt className="eyebrow text-muted-foreground">Focus</dt>
             <dd className="text-pretty text-sm leading-relaxed text-foreground">
               {line.focus}
             </dd>
           </div>
-          <div className="flex flex-col gap-1.5 border-brand-gold/60 sm:border-l sm:pl-6">
+          <div className="flex flex-col gap-1.5 border-brand-gold/60 animate-fade-up animation-delay-200 sm:border-l sm:pl-6">
             <dt className="eyebrow text-muted-foreground">Structures written</dt>
             <dd className="mt-1 flex flex-wrap gap-2">
               {line.treatyTypes.map((type) => (
@@ -94,10 +94,13 @@ export default async function BusinessLinePage({
             description={`The covers below represent Global RE's core appetite in ${line.shortName.toLowerCase()}. Risks outside this list can still be reviewed when the scope, data, and wording are clear.`}
           />
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {line.products.map((product) => (
+            {line.products.map((product, index) => (
               <article
                 key={product.name}
-                className="flex flex-col gap-3 rounded-lg border border-border bg-card p-8"
+                style={{
+                  animationDelay: `${index * 60}ms`,
+                }}
+                className="flex flex-col gap-3 rounded-lg border border-border bg-card p-8 animate-fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 <div className="flex items-start gap-3">
                   <span
@@ -127,10 +130,13 @@ export default async function BusinessLinePage({
             description="Each submission is reviewed through the lens of exposure quality, documentation, contractual wording, claims experience, and the specific controls relevant to the class."
           />
           <div className="grid gap-4 sm:grid-cols-2">
-            {line.riskConsiderations.map((item) => (
+            {line.riskConsiderations.map((item, index) => (
               <article
                 key={item.title}
-                className="rounded-lg border border-border bg-card p-6"
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="rounded-lg border border-border bg-card p-6 animate-fade-up transition-shadow duration-300 hover:shadow-lg"
               >
                 <h3 className="font-display text-lg font-bold text-card-foreground">
                   {item.title}
@@ -152,10 +158,13 @@ export default async function BusinessLinePage({
             title={`Our approach to ${line.shortName.toLowerCase()} risk`}
           />
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-8">
-            {line.differentiators.map((item) => (
+            {line.differentiators.map((item, index) => (
               <div
                 key={item.title}
-                className="flex flex-col gap-3 border-t-2 border-brand-gold pt-6"
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                }}
+                className="flex flex-col gap-3 border-t-2 border-brand-gold pt-6 animate-fade-up"
               >
                 <h3 className="text-lg font-semibold text-on-dark">{item.title}</h3>
                 <p className="text-pretty leading-relaxed text-on-dark/70">{item.body}</p>
@@ -176,7 +185,10 @@ export default async function BusinessLinePage({
             {line.submissionRequirements.map((requirement, index) => (
               <li
                 key={requirement}
-                className="flex gap-4 rounded-lg border border-border bg-card p-6"
+                style={{
+                  animationDelay: `${index * 60}ms`,
+                }}
+                className="flex gap-4 rounded-lg border border-border bg-card p-6 animate-fade-up transition-shadow duration-300 hover:shadow-md"
               >
                 <span className="flex size-8 shrink-0 items-center justify-center rounded-md bg-brand-gold/15 font-mono text-sm font-semibold text-brand-indigo">
                   {index + 1}
@@ -198,11 +210,17 @@ export default async function BusinessLinePage({
             description="Each class is written within a defined appetite so counterparties can see where Global RE is prepared to participate."
           />
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {others.map((other) => (
-              <li key={other.slug}>
+            {others.map((other, index) => (
+              <li
+                key={other.slug}
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="animate-fade-up"
+              >
                 <Link
                   href={`/solutions/${other.slug}`}
-                  className="group flex h-full flex-col gap-3 rounded-lg border border-border bg-card p-6 transition-colors hover:border-brand-teal"
+                  className="group flex h-full flex-col gap-3 rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:border-brand-teal hover:shadow-lg hover:-translate-y-0.5"
                 >
                   <h3 className="font-semibold text-card-foreground group-hover:text-brand-teal">
                     {other.name}

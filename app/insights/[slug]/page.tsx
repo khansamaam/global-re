@@ -76,8 +76,14 @@ export default async function InsightPage({
             </div>
 
             <div className="mt-12 space-y-10">
-              {insight.body.map((section) => (
-                <section key={section.heading} className="animate-fade-up">
+              {insight.body.map((section, index) => (
+                <section
+                  key={section.heading}
+                  style={{
+                    animationDelay: `${index * 100}ms`,
+                  }}
+                  className="animate-fade-up"
+                >
                   <h2 className="font-display text-2xl font-bold text-foreground">
                     {section.heading}
                   </h2>
@@ -104,11 +110,17 @@ export default async function InsightPage({
           </div>
 
           <aside className="lg:sticky lg:top-32 lg:self-start">
-            <div className="rounded-lg border border-border bg-card p-6">
+            <div className="rounded-lg border border-border bg-card p-6 animate-fade-up animation-delay-100 transition-shadow duration-300 hover:shadow-lg">
               <p className="eyebrow text-brand-teal">Underwriting signals</p>
               <ul className="mt-5 flex flex-col gap-4">
-                {insight.signals.map((signal) => (
-                  <li key={signal} className="flex items-start gap-2.5 text-sm">
+                {insight.signals.map((signal, index) => (
+                  <li
+                    key={signal}
+                    style={{
+                      animationDelay: `${200 + index * 50}ms`,
+                    }}
+                    className="flex items-start gap-2.5 text-sm animate-fade-up"
+                  >
                     <CheckCircle2
                       className="mt-0.5 size-4 shrink-0 text-brand-teal"
                       aria-hidden="true"
@@ -120,7 +132,7 @@ export default async function InsightPage({
                 ))}
               </ul>
             </div>
-            <div className="mt-6 rounded-lg border border-border bg-muted/50 p-6">
+            <div className="mt-6 rounded-lg border border-border bg-muted/50 p-6 animate-fade-up animation-delay-200 transition-shadow duration-300 hover:shadow-lg">
               <p className="eyebrow text-muted-foreground">Related action</p>
               <h2 className="mt-3 font-display text-xl font-bold text-foreground">
                 Discuss a proposal

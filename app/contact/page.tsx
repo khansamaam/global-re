@@ -55,11 +55,14 @@ export default function ContactPage() {
             description="For a proposal submission, include the business class, exposure data, loss history, proposed structure, and any relevant wording or collateral information."
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {contactCards.map((item) => (
+            {contactCards.map((item, index) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="group rounded-lg border border-border bg-card p-8 transition-colors hover:border-brand-teal"
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="group rounded-lg border border-border bg-card p-8 animate-fade-up transition-all duration-300 hover:border-brand-teal hover:shadow-lg hover:-translate-y-1"
               >
                 <span className="flex size-11 items-center justify-center rounded-md bg-brand-indigo/10 text-brand-indigo">
                   <item.icon className="size-5" aria-hidden="true" />
@@ -82,7 +85,7 @@ export default function ContactPage() {
               title="Send the details needed for an appetite review"
               description="Use this form layout to prepare the core information Global RE expects before reviewing a treaty or facultative opportunity."
             />
-            <form className="grid gap-5 rounded-lg border border-border bg-card p-6 shadow-sm sm:grid-cols-2 lg:p-8">
+            <form className="grid gap-5 rounded-lg border border-border bg-card p-6 shadow-sm sm:grid-cols-2 lg:p-8 animate-fade-up animation-delay-100">
               <label className="flex flex-col gap-2 text-sm font-medium text-card-foreground">
                 Name
                 <input
@@ -143,10 +146,13 @@ export default function ContactPage() {
             title="Headquarters, representative office, and registered details"
           />
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
-            {offices.map((office) => (
+            {offices.map((office, index) => (
               <article
                 key={`${office.city}-${office.role}`}
-                className="rounded-lg border border-border bg-card p-8"
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="rounded-lg border border-border bg-card p-8 animate-fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 <Building2 className="size-6 text-brand-teal" aria-hidden="true" />
                 <p className="mt-5 font-display text-2xl font-bold text-card-foreground">
@@ -159,7 +165,7 @@ export default function ContactPage() {
               </article>
             ))}
           </div>
-          <div className="mt-10 rounded-lg border border-border bg-card p-8">
+          <div className="mt-10 rounded-lg border border-border bg-card p-8 animate-fade-up animation-delay-300 transition-shadow duration-300 hover:shadow-lg">
             <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
               <div className="max-w-2xl">
                 <div className="flex items-center gap-3">

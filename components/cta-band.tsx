@@ -16,7 +16,7 @@ export function CtaBand({
   return (
     <section className="bg-muted/40 py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col gap-8 rounded-lg border border-border bg-card p-10 lg:flex-row lg:items-center lg:justify-between lg:p-14">
+        <div className="flex flex-col gap-8 rounded-lg border border-border bg-card p-10 animate-fade-up transition-shadow duration-300 hover:shadow-xl lg:flex-row lg:items-center lg:justify-between lg:p-14">
           <div className="flex max-w-2xl flex-col gap-4">
             <h2 className="text-balance text-2xl font-bold text-card-foreground sm:text-3xl">
               {title}

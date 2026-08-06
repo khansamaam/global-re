@@ -50,7 +50,7 @@ export function FinancialYearPortfolioCard({
   return (
     <div
       className={cn(
-        'rounded-lg border border-border bg-card p-6 shadow-sm lg:p-8',
+        'rounded-lg border border-border bg-card p-6 shadow-sm animate-fade-up transition-shadow duration-300 hover:shadow-lg lg:p-8',
         className,
       )}
     >

@@ -41,8 +41,14 @@ export default function InvestorsPage() {
             description="A concise view of profile facts, portfolio reach, and participation discipline for counterparties."
           />
           <dl className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label} className="rounded-lg border border-border bg-card p-6">
+            {stats.map((stat, index) => (
+              <div
+                key={stat.label}
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="rounded-lg border border-border bg-card p-6 animate-fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+              >
                 <dt className="eyebrow text-muted-foreground">{stat.label}</dt>
                 <dd className="mt-3 break-words font-display text-3xl font-bold text-brand-indigo">
                   {stat.value}
@@ -58,7 +64,7 @@ export default function InvestorsPage() {
 
       <section id="ratings" className="border-b border-border bg-muted/40 py-20 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-3">
-          <div className="rounded-lg border border-border bg-card p-8">
+          <div className="rounded-lg border border-border bg-card p-8 animate-fade-up transition-shadow duration-300 hover:shadow-lg">
             <FileText className="size-6 text-brand-teal" aria-hidden="true" />
             <h3 className="mt-5 font-display text-xl font-bold text-card-foreground">
               Financial strength review
@@ -68,7 +74,7 @@ export default function InvestorsPage() {
               underwriting scope, wording quality, exposure data, and claims obligations.
             </p>
           </div>
-          <div className="rounded-lg border border-border bg-card p-8">
+          <div className="rounded-lg border border-border bg-card p-8 animate-fade-up animation-delay-100 transition-shadow duration-300 hover:shadow-lg">
             <ShieldCheck className="size-6 text-brand-teal" aria-hidden="true" />
             <h3 className="mt-5 font-display text-xl font-bold text-card-foreground">
               Claims-paying ability
@@ -78,7 +84,7 @@ export default function InvestorsPage() {
               wording, exposure quality, and available capital.
             </p>
           </div>
-          <div className="rounded-lg border border-brand-gold/35 bg-brand-gold/10 p-8">
+          <div className="rounded-lg border border-brand-gold/35 bg-brand-gold/10 p-8 animate-fade-up animation-delay-200 transition-shadow duration-300 hover:shadow-lg">
             <CheckCircle2 className="size-6 text-brand-gold" aria-hidden="true" />
             <h3 className="mt-5 font-display text-xl font-bold text-card-foreground">
               Written portfolio
@@ -127,10 +133,13 @@ export default function InvestorsPage() {
           </div>
 
           <div className="grid gap-4">
-            {previousYearFinancials.documents.map((document) => (
+            {previousYearFinancials.documents.map((document, index) => (
               <article
                 key={document.title}
-                className="rounded-lg border border-border bg-card p-6"
+                style={{
+                  animationDelay: `${index * 80}ms`,
+                }}
+                className="rounded-lg border border-border bg-card p-6 animate-fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div>
@@ -230,8 +239,14 @@ export default function InvestorsPage() {
             description="Global RE's business scope is defined by Property, Casualty, Engineering, Marine, and Bonds/Surety reinsurance."
           />
           <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {businessLines.map((line) => (
-              <li key={line.slug} className="rounded-lg border border-border bg-card p-6">
+            {businessLines.map((line, index) => (
+              <li
+                key={line.slug}
+                style={{
+                  animationDelay: `${index * 70}ms`,
+                }}
+                className="rounded-lg border border-border bg-card p-6 animate-fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+              >
                 <h3 className="font-display text-lg font-bold text-card-foreground">
                   {line.name}
                 </h3>

@@ -18,7 +18,7 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        'flex max-w-3xl flex-col gap-4',
+        'flex max-w-3xl flex-col gap-4 animate-fade-up',
         align === 'center' && 'mx-auto items-center text-center',
         className,
       )}
