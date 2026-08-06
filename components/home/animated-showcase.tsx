@@ -13,8 +13,8 @@ const stats = [
   {
     icon: ShieldCheck,
     value: 'A-Rated',
-    label: 'Retrocession',
-    detail: 'ASR Syndicate 2454 leader',
+    label: 'Security',
+    detail: 'Backed by A-Rated Security',
     color: 'text-sky-400',
     glow: 'bg-sky-400/10',
   },
@@ -62,23 +62,53 @@ export function AnimatedShowcase() {
         ))}
       </div>
 
-      {/* Center hero metric */}
+      {/* Center hero metric - Net Premium Income Chart */}
       <Link
         href="#portfolio"
         className="showcase-hero-metric group/hero"
       >
         <div className="showcase-hero-glow" aria-hidden="true" />
-        <div className="relative z-10">
-          <p className="font-display text-5xl font-black tracking-tight text-white lg:text-6xl">
-            $287.5M
+        <div className="relative z-10 w-full">
+          <p className="text-xs font-semibold uppercase tracking-wider text-white/50">
+            Net Premium Income
           </p>
-          <p className="mt-2 text-sm font-medium text-white/50">
-            Portfolio Capacity
-          </p>
-          <div className="mt-3 flex items-center gap-1.5 text-emerald-400">
-            <ArrowUpRight className="size-3.5" />
+
+          {/* Animated Bar Chart */}
+          <div className="mt-4 flex items-end justify-between gap-3 px-2">
+            {[
+              { year: '2024', value: 28, amount: '$28M', color: 'bg-sky-400/60' },
+              { year: '2025', value: 33.4, amount: '$33.4M', color: 'bg-emerald-400/70' },
+              { year: '2026 YTD', value: 18, amount: '$18M', color: 'bg-amber-400/80' },
+            ].map((data, i) => {
+              const heightPercent = (data.value / 33.4) * 100
+              return (
+                <div key={data.year} className="flex flex-1 flex-col items-center gap-2">
+                  <div className="relative w-full">
+                    <div
+                      className={`showcase-chart-bar ${data.color} relative overflow-hidden rounded-t-md transition-all duration-700 ease-out`}
+                      style={{
+                        height: `${heightPercent * 1.2}px`,
+                        animationDelay: `${0.2 + i * 0.15}s`,
+                      }}
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent" />
+                    </div>
+                    <p className="mt-2 text-center font-display text-sm font-bold text-white">
+                      {data.amount}
+                    </p>
+                  </div>
+                  <p className="text-center text-[10px] font-medium text-white/40">
+                    {data.year}
+                  </p>
+                </div>
+              )
+            })}
+          </div>
+
+          <div className="mt-4 flex items-center justify-center gap-1.5 text-emerald-400">
+            <TrendingUp className="size-3.5" />
             <span className="text-xs font-semibold tracking-wide">
-              A-Rated Retrocession Support
+              +19% YoY Growth
             </span>
           </div>
         </div>
