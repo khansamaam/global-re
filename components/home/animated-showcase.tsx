@@ -12,9 +12,9 @@ const stats = [
   },
   {
     icon: ShieldCheck,
-    value: 'A-Rated',
-    label: 'Security',
-    detail: 'Backed by A-Rated Security',
+    value: 'Backed by',
+    label: 'A-Rated Retrocession',
+    detail: 'ASR Syndicate 2454 leader',
     color: 'text-sky-400',
     glow: 'bg-sky-400/10',
   },
@@ -74,7 +74,7 @@ export function AnimatedShowcase() {
           </p>
 
           {/* Animated Line Chart */}
-          <div className="relative mt-6 h-32 px-4">
+          <div className="relative mt-6 h-28 px-4">
             {/* Grid lines */}
             <div className="absolute inset-0">
               {[0, 1, 2, 3].map((i) => (
@@ -120,9 +120,9 @@ export function AnimatedShowcase() {
 
             {/* Data points */}
             {[
-              { x: 10, y: 70, year: '2024', amount: '$24.1M', note: 'Full Year' },
-              { x: 50, y: 60, year: '2025', amount: '$15.1M', note: 'Full Year' },
-              { x: 90, y: 35, year: '2026', amount: '$18.9M', note: 'Projected: $28M+' },
+              { x: 10, y: 70, year: '2024', amount: '$24.1M', note: 'Full Year', labelBelow: true },
+              { x: 50, y: 60, year: '2025', amount: '$15.1M', note: 'Full Year', labelBelow: false },
+              { x: 90, y: 35, year: '2026', amount: '$18.9M', note: 'Projected: $28M+', labelBelow: true },
             ].map((point, i) => (
               <div
                 key={point.year}
@@ -139,7 +139,7 @@ export function AnimatedShowcase() {
                     <div className="h-3 w-3 rounded-full border-2 border-emerald-400 bg-emerald-400/80 shadow-lg shadow-emerald-400/50" />
                   </div>
                   {/* Label */}
-                  <div className="absolute -translate-x-1/2 translate-y-6 whitespace-nowrap text-center">
+                  <div className={`absolute -translate-x-1/2 whitespace-nowrap text-center ${point.labelBelow ? 'translate-y-6' : '-translate-y-14'}`}>
                     <p className="text-xs font-bold text-white">{point.amount}</p>
                     <p className="text-[10px] text-white/40">{point.year}</p>
                     {point.note && (

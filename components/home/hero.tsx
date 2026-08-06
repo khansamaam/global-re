@@ -54,7 +54,7 @@ export function Hero() {
             <div className="animate-fade-up animation-delay-300 flex flex-wrap gap-3">
               {[
                 { icon: Globe2, label: '112 Markets', color: 'text-emerald-400', bg: 'bg-emerald-400/10' },
-                { icon: ShieldCheck, label: 'A-Rated Security', color: 'text-sky-400', bg: 'bg-sky-400/10' },
+                { icon: ShieldCheck, label: 'Backed by A-Rated Security', color: 'text-sky-400', bg: 'bg-sky-400/10' },
               ].map(({ icon: Icon, label, color, bg }) => (
                 <div
                   key={label}
