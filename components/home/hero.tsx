@@ -1,8 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import { ArrowRight, Globe2, ShieldCheck, TrendingUp } from 'lucide-react'
+import { Globe2, ShieldCheck, TrendingUp } from 'lucide-react'
 import { AnimatedShowcase } from '@/components/home/animated-showcase'
-import { Button } from '@/components/ui/button'
 import { portfolioScopeStatement } from '@/lib/site'
 
 export function Hero() {
@@ -79,27 +77,6 @@ export function Hero() {
               ))}
             </div>
 
-            {/* CTAs */}
-            <div className="animate-fade-up animation-delay-300 flex flex-wrap items-center gap-4 pt-3">
-              <Button
-                size="lg"
-                className="hero-cta-primary group h-12 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-8 text-[15px] font-semibold text-slate-900 shadow-lg shadow-amber-500/25 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:shadow-amber-500/30"
-                nativeButton={false}
-                render={<Link href="/contact" />}
-              >
-                Submit Proposal
-                <ArrowRight className="ml-2 size-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-12 rounded-xl border-white/[0.12] bg-white/[0.04] px-8 text-[15px] font-semibold text-white/80 backdrop-blur-sm transition-all duration-300 hover:border-white/20 hover:bg-white/[0.08] hover:text-white"
-                nativeButton={false}
-                render={<Link href="/solutions" />}
-              >
-                Explore Appetite
-              </Button>
-            </div>
           </div>
 
           {/* Right: Animated showcase */}
