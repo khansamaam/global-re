@@ -17,7 +17,7 @@ export default function HomePage() {
       <BusinessLines />
       <PortfolioMix />
       <SecurityBand />
-      <PartnersSection surface="muted" variant="marquee" />
+      <PartnersSection surface="muted" />
       <InsightsPreview />
       <HomeFinalCta />
     </div>

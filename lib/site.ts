@@ -745,33 +745,28 @@ export const groupCompanies = [
 export const partners = [
   {
     category: 'Investor',
-    title: 'Investor support',
-    description:
-      'Ownership and capital support aligned with Global RE as a specialist reinsurance group.',
+    name: 'One Investment Fund',
+    logo: '/images/partners/one-investment-fund.png',
   },
   {
-    category: 'Audit',
-    title: 'Audit partner',
-    description:
-      'External audit support for financial reporting discipline and counterparty review.',
+    category: 'Actuarial',
+    name: 'Badri',
+    logo: '/images/partners/badri.png',
   },
   {
     category: 'ERP',
-    title: 'Enterprise systems',
-    description:
-      'Operational systems support for finance, reporting, workflow, and controlled records.',
+    name: 'Tellma',
+    logo: '/images/partners/tellma.png',
   },
   {
     category: 'Bank',
-    title: 'Banking relationship',
-    description:
-      'Banking support for treasury, payments, and day-to-day financial operations.',
+    name: 'Emirates NBD',
+    logo: '/images/partners/emirates-nbd.png',
   },
   {
     category: 'Software',
-    title: 'Technology partner',
-    description:
-      'Software support for operating control, reporting, and scalable business processes.',
+    name: 'DXC Technology',
+    logo: '/images/partners/dxc-technology.png',
   },
 ]
 
