@@ -22,29 +22,29 @@ export function ProofStrip() {
       <div className="proof-motion-glow" aria-hidden="true" />
       <div className="mx-auto grid max-w-7xl gap-px px-6 lg:grid-cols-[1fr_1.4fr]">
         <div className="proof-metric-deck grid gap-px border-x border-border bg-border sm:grid-cols-3 lg:border-r-0">
-          <div className="proof-metric-card flex flex-col justify-center bg-card p-5" data-gsap-item>
-            <p className="eyebrow text-muted-foreground">Markets reached</p>
-            <p className="mt-3 font-display text-3xl font-bold text-brand-indigo">
+          <div className="proof-metric-card flex flex-col justify-center bg-card p-5 text-left" data-gsap-item>
+            <p className="eyebrow text-left text-muted-foreground">Markets reached</p>
+            <p className="mt-3 text-left font-display text-3xl font-bold text-brand-indigo">
               <MetricCountUp value={112} />
             </p>
           </div>
           <div
-            className="proof-metric-card flex flex-col justify-center bg-card p-5"
+            className="proof-metric-card flex flex-col justify-center bg-card p-5 text-left"
             data-gsap-item
             data-gsap-delay="0.06"
           >
-            <p className="eyebrow text-muted-foreground">Property share</p>
-            <p className="mt-3 font-display text-3xl font-bold text-brand-indigo">
+            <p className="eyebrow text-left text-muted-foreground">Property share</p>
+            <p className="mt-3 text-left font-display text-3xl font-bold text-brand-indigo">
               <MetricCountUp value={37} suffix="%" />
             </p>
           </div>
           <div
-            className="proof-metric-card flex flex-col justify-center bg-card p-5"
+            className="proof-metric-card flex flex-col justify-center bg-card p-5 text-left"
             data-gsap-item
             data-gsap-delay="0.12"
           >
-            <p className="eyebrow text-muted-foreground">Average share</p>
-            <p className="mt-3 font-display text-3xl font-bold text-brand-indigo">
+            <p className="eyebrow text-left text-muted-foreground">Average share</p>
+            <p className="mt-3 text-left font-display text-3xl font-bold text-brand-indigo">
               <MetricCountUp value={8.3} suffix="%" decimals={1} />
             </p>
           </div>
