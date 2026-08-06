@@ -55,7 +55,6 @@ export function Hero() {
               {[
                 { icon: Globe2, label: '112 Markets', color: 'text-emerald-400', bg: 'bg-emerald-400/10' },
                 { icon: ShieldCheck, label: 'A-Rated Security', color: 'text-sky-400', bg: 'bg-sky-400/10' },
-                { icon: TrendingUp, label: '$287.5M Portfolio', color: 'text-amber-400', bg: 'bg-amber-400/10' },
               ].map(({ icon: Icon, label, color, bg }) => (
                 <div
                   key={label}
