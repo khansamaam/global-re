@@ -77,7 +77,7 @@ export function SiteHeader() {
                 GLOBAL <span className="text-brand-teal">RE</span>
               </span>
               <span className="mt-1 hidden text-[0.625rem] font-medium uppercase tracking-[0.18em] text-muted-foreground sm:block">
-                Reinsurance Group
+                Reinsurance
               </span>
             </span>
           </Link>
