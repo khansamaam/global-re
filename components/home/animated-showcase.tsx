@@ -122,7 +122,7 @@ export function AnimatedShowcase() {
             {[
               { x: 10, y: 45, year: '2024', amount: '$24.1M', note: 'Full Year', labelBelow: true },
               { x: 50, y: 55, year: '2025', amount: '$15.1M', note: 'Full Year', labelBelow: true },
-              { x: 90, y: 20, year: '2026', amount: '$18.9M YTD', note: 'Projected: $28M+', labelBelow: true },
+              { x: 90, y: 20, year: '(As on 30 June 2026)', amount: '$18.9M YTD', note: 'Projected: $28M+', labelBelow: true },
             ].map((point, i) => (
               <div
                 key={point.year}
