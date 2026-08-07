@@ -731,7 +731,7 @@ export const partners = [
   {
     category: 'ERP',
     name: 'Tellma',
-    logo: '/images/partners/tellma.png',
+    logo: '/images/partners/banan-dark.png',
   },
   {
     category: 'Bank',
