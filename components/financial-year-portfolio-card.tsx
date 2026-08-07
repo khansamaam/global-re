@@ -62,7 +62,7 @@ export function FinancialYearPortfolioCard({
       >
         <div className="flex flex-col gap-2">
           <p className="eyebrow text-brand-teal">
-            {financialYearPortfolio.year} audited profile
+            {financialYearPortfolio.year} Financial Highlights
           </p>
           <p className="font-display text-4xl font-bold tracking-tight text-card-foreground sm:text-5xl">
             {financialYearPortfolio.total}

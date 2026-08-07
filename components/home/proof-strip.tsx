@@ -10,7 +10,7 @@ import {
 const proofItems = [
   'Nevis headquarters',
   'Dubai representative office',
-  `${financialYearPortfolio.year} audited profile`,
+  `${financialYearPortfolio.year} Financial Highlights`,
   `${retrocessionSecurityPanel.year} A-rated security panel`,
   'Treaty and facultative placements',
   portfolioScopeStatement.replace('Global RE writes ', ''),

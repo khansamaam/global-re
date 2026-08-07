@@ -85,7 +85,7 @@ export function PortfolioMix() {
           <GsapReveal>
             <SectionHeading
               eyebrow="Financial year portfolio"
-              title="FY2025 audited profile"
+              title="FY2025 Financial Highlights"
               description="A fuller portfolio view for counterparties reviewing scale, reach, concentration, and participation discipline."
               className="mb-10 max-w-4xl"
             />

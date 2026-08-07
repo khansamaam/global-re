@@ -166,7 +166,7 @@ export function FinancialStrengthLeadership() {
           <div className="mb-10 grid gap-6 lg:grid-cols-[1fr_0.48fr] lg:items-end">
             <SectionHeading
               eyebrow="Financial year portfolio"
-              title="FY2025 audited profile"
+              title="FY2025 Financial Highlights"
               description="A concise view of audited financial highlights, portfolio reach, and underwriting discipline from the company profile."
               className="max-w-4xl"
             />
