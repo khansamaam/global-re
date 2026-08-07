@@ -155,7 +155,7 @@ export const insights: Insight[] = [
     readingTime: '13 min',
     author: 'Casualty underwriting team',
     authorRole: 'Global RE Underwriting',
-    image: '/images/line-casualty.png',
+    image: '/images/insight-liability.webp',
     imageAlt: 'Ordered logistics terminal at blue hour with transport lanes and cranes',
     signals: [
       'Venue and jurisdiction',
@@ -196,7 +196,7 @@ export const insights: Insight[] = [
     readingTime: '6 min',
     author: 'Catastrophe analytics team',
     authorRole: 'Global RE Risk Science',
-    image: '/images/line-property.png',
+    image: '/images/insight-catastrophe.webp',
     imageAlt: 'Satellite view of a hurricane system over open ocean near a coastline',
     signals: [
       'Event definition and hours clauses',
@@ -319,7 +319,7 @@ export const insights: Insight[] = [
     readingTime: '9 min',
     author: 'Specialty underwriting team',
     authorRole: 'Global RE Underwriting',
-    image: '/images/line-specialty.png',
+    image: '/images/insight-parametric.webp',
     imageAlt: 'Offshore energy infrastructure at sunrise with teal water and industrial detail',
     signals: [
       'Trigger transparency',
