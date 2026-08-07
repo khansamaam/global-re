@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Mail, Phone } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { SectionHeading } from '@/components/section-heading'
 import { Button } from '@/components/ui/button'
@@ -135,6 +135,34 @@ export default function ContactPage() {
                 </Button>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border bg-background py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="rounded-lg border border-border bg-card p-8">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+              <div className="max-w-2xl">
+                <div className="flex items-center gap-3">
+                  <MapPin className="size-5 text-brand-teal" aria-hidden="true" />
+                  <h3 className="font-display text-xl font-bold text-card-foreground">
+                    Correspondence address and meeting address
+                  </h3>
+                </div>
+                <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
+                  {site.representativeOffice}
+                </p>
+              </div>
+              <Button
+                size="lg"
+                className="h-12 bg-brand-indigo px-6 text-on-dark hover:bg-brand-indigo/90"
+                nativeButton={false}
+                render={<Link href={`mailto:${site.underwritingEmail}`} />}
+              >
+                Email Underwriting
+              </Button>
+            </div>
           </div>
         </div>
       </section>

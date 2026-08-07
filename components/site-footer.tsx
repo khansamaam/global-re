@@ -63,7 +63,6 @@ export function SiteFooter() {
               </span>
             </Link>
             <div className="mt-6 flex flex-col gap-2 text-sm opacity-70">
-              <p className="font-medium">Correspondence address and meeting address:</p>
               <p>A.L.Evelyn Ltd Building, Main Street, Charlestown, Nevis (KN-N), KN1200, SAINT KITTS AND NEVIS.</p>
               <p className="mt-2">{site.phone}</p>
               <p>
