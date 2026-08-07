@@ -64,6 +64,8 @@ export function SiteFooter() {
             </Link>
             <div className="mt-6 flex flex-col gap-2 text-sm opacity-70">
               <p>A.L.Evelyn Ltd Building, Main Street, Charlestown, Nevis (KN-N), KN1200, SAINT KITTS AND NEVIS.</p>
+              <p className="mt-2 font-medium">Correspondence and meeting address:</p>
+              <p>{site.representativeOffice}</p>
               <p className="mt-2">{site.phone}</p>
               <p>
                 <a className="hover:underline" href={`mailto:${site.email}`}>
