@@ -87,7 +87,7 @@ export default function RootLayout({
       applyGlobalReTheme(
         stored === 'light' || stored === 'dark'
           ? stored
-          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+          : 'light'
       );
 
       document.addEventListener('click', function(event) {
