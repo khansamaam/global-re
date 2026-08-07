@@ -12,8 +12,8 @@ const stats = [
   },
   {
     icon: ShieldCheck,
-    value: 'Backed by',
-    label: 'A-Rated Retrocession',
+    value: 'Supported by',
+    label: 'an A-rated retrocession panel',
     detail: 'ASR Syndicate 2454 leader',
     color: 'text-sky-400',
     glow: 'bg-sky-400/10',
