@@ -153,6 +153,9 @@ export default function ContactPage() {
                 <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
                   {site.representativeOffice}
                 </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Headquarters: A.L.Evelyn Ltd Building, Main Street, Charlestown, Nevis (KN-N), KN1200, SAINT KITTS AND NEVIS.
+                </p>
               </div>
               <Button
                 size="lg"
