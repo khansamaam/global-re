@@ -14,4 +14,4 @@ node_modules
 .next/
 .DS_Store
 .tools/
-backups/
+backups/submissions.log

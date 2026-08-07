@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { SectionHeading } from '@/components/section-heading'
-import { Button } from '@/components/ui/button'
-import { businessLines, site } from '@/lib/site'
+import { site } from '@/lib/site'
+import { ContactForm, AddressSection } from './contact-form'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -85,90 +85,12 @@ export default function ContactPage() {
               title="Send the details needed for an appetite review"
               description="Use this form layout to prepare the core information Global RE expects before reviewing a treaty or facultative opportunity."
             />
-            <form className="grid gap-5 rounded-lg border border-border bg-card p-6 shadow-sm sm:grid-cols-2 lg:p-8 animate-fade-up animation-delay-100">
-              <label className="flex flex-col gap-2 text-sm font-medium text-card-foreground">
-                Name
-                <input
-                  className="h-11 rounded-md border border-input bg-background px-3 text-sm outline-none transition-colors focus:border-brand-teal"
-                  placeholder="Your name"
-                />
-              </label>
-              <label className="flex flex-col gap-2 text-sm font-medium text-card-foreground">
-                Company
-                <input
-                  className="h-11 rounded-md border border-input bg-background px-3 text-sm outline-none transition-colors focus:border-brand-teal"
-                  placeholder="Company name"
-                />
-              </label>
-              <label className="flex flex-col gap-2 text-sm font-medium text-card-foreground">
-                Email
-                <input
-                  type="email"
-                  className="h-11 rounded-md border border-input bg-background px-3 text-sm outline-none transition-colors focus:border-brand-teal"
-                  placeholder="name@company.com"
-                />
-              </label>
-              <label className="flex flex-col gap-2 text-sm font-medium text-card-foreground">
-                Business class
-                <select className="h-11 rounded-md border border-input bg-background px-3 text-sm outline-none transition-colors focus:border-brand-teal">
-                  {businessLines.map((line) => (
-                    <option key={line.slug}>{line.name}</option>
-                  ))}
-                </select>
-              </label>
-              <label className="flex flex-col gap-2 text-sm font-medium text-card-foreground sm:col-span-2">
-                Proposal summary
-                <textarea
-                  className="min-h-32 rounded-md border border-input bg-background px-3 py-3 text-sm outline-none transition-colors focus:border-brand-teal"
-                  placeholder="Share the proposed structure, territory, exposure data, loss history, and timing."
-                />
-              </label>
-              <div className="flex flex-col gap-3 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
-                <p className="text-xs leading-relaxed text-muted-foreground">
-                  Email the completed proposal pack to {site.underwritingEmail}.
-                </p>
-                <Button
-                  type="button"
-                  className="h-11 bg-brand-indigo px-5 text-on-dark hover:bg-brand-indigo/90"
-                >
-                  Submit Proposal
-                </Button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
 
-      <section className="border-b border-border bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="rounded-lg border border-border bg-card p-8">
-            <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
-              <div className="max-w-2xl">
-                <div className="flex items-center gap-3">
-                  <MapPin className="size-5 text-brand-teal" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-card-foreground">
-                    Correspondence address and meeting address
-                  </h3>
-                </div>
-                <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
-                  {site.representativeOffice}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  A.L.Evelyn Ltd Building, Main Street, Charlestown, Nevis (KN-N), KN1200, SAINT KITTS AND NEVIS.
-                </p>
-              </div>
-              <Button
-                size="lg"
-                className="h-12 bg-brand-indigo px-6 text-on-dark hover:bg-brand-indigo/90"
-                nativeButton={false}
-                render={<Link href={`mailto:${site.underwritingEmail}`} />}
-              >
-                Email Underwriting
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AddressSection />
     </>
   )
 }

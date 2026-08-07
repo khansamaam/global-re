@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Linkedin } from 'lucide-react'
 import { businessLines, site } from '@/lib/site'
 import { legalNavigation } from '@/lib/legal-pages'
 
@@ -78,6 +79,15 @@ export function SiteFooter() {
                 </a>
               </p>
             </div>
+            <a
+              href="https://ae.linkedin.com/company/global-re-ltd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-2 text-sm opacity-70 transition-opacity hover:opacity-100"
+            >
+              <Linkedin className="size-4" aria-hidden="true" />
+              LinkedIn
+            </a>
           </div>
 
           <div className="grid grid-cols-2 gap-x-10 gap-y-10 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-12">
