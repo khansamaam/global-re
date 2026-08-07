@@ -62,20 +62,9 @@ export function SiteFooter() {
                 GLOBAL RE
               </span>
             </Link>
-            <p className="mt-5 text-sm leading-relaxed opacity-70">
-              Nevis-headquartered global reinsurance firm with a
-              Dubai representative office, focused on treaty and facultative risk
-              across defined specialist reinsurance classes.
-            </p>
             <div className="mt-6 flex flex-col gap-2 text-sm opacity-70">
-              <p>
-                <span className="font-medium">HQ:</span>{' '}
-                {site.hq}
-              </p>
-              <p>
-                <span className="font-medium">Dubai:</span>{' '}
-                {site.representativeOffice}
-              </p>
+              <p className="font-medium">Correspondence address and meeting address:</p>
+              <p>A.L.Evelyn Ltd Building, Main Street, Charlestown, Nevis (KN-N), KN1200, SAINT KITTS AND NEVIS.</p>
               <p className="mt-2">{site.phone}</p>
               <p>
                 <a className="hover:underline" href={`mailto:${site.email}`}>
