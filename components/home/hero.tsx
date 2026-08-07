@@ -47,7 +47,7 @@ export function Hero() {
             {/* Description */}
             <p className="hero-description animate-fade-up animation-delay-200 max-w-lg text-pretty text-base leading-relaxed text-white/55 lg:text-lg">
               {portfolioScopeStatement} A defined reinsurance platform with
-              A-rated retrocession support and global market reach.
+              Supported by an A-rated retrocession panel and global market reach.
             </p>
 
             {/* Trust indicators */}

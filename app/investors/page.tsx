@@ -175,7 +175,7 @@ export default function InvestorsPage() {
             <SectionHeading
               eyebrow="Retrocession security"
               title="Security panel"
-              description={`Global RE's retrocession protection is under the leadership of ${retrocessionSecurityPanel.leader}.`}
+              description={`Global RE is supported by an A-rated retrocession panel under the leadership of ${retrocessionSecurityPanel.leader}.`}
             />
             <div className="rounded-lg border border-border bg-card p-6">
               <div className="grid gap-4">

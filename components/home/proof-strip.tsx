@@ -11,7 +11,7 @@ const proofItems = [
   'Nevis headquarters',
   'Dubai representative office',
   `${financialYearPortfolio.year} Financial Highlights`,
-  `${retrocessionSecurityPanel.year} A-rated security panel`,
+  `Supported by an A-rated retrocession panel`,
   'Treaty and facultative placements',
   portfolioScopeStatement.replace('Global RE writes ', ''),
 ]

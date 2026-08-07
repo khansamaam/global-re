@@ -20,7 +20,7 @@ export function SecurityBand() {
           <div>
             <p className="eyebrow text-brand-gold">Retrocession security</p>
             <h2 className="mt-4 max-w-3xl text-balance text-4xl font-bold leading-tight text-on-dark sm:text-5xl">
-              Backed by A-rated security.
+              Supported by an A-rated retrocession panel.
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-on-dark/72">
               Global RE's retrocession protection is under the leadership
