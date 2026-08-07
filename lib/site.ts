@@ -39,7 +39,7 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Property',
     summary:
       'Property reinsurance for commercial, industrial, and project-related assets, with attention to physical damage, business interruption, and catastrophe aggregation.',
-    image: '/images/line-property-new.jpg',
+    image: '/images/line-property-new.png',
     imageAlt:
       'Modern commercial building skyline representing property insurance coverage',
     scope: 'Commercial and industrial property',
@@ -126,7 +126,7 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Casualty',
     summary:
       'Casualty reinsurance for general liability, products liability, employers liability, and excess liability exposures where jurisdiction, wording, and claims environment are understood.',
-    image: '/images/line-casualty-new.jpg',
+    image: '/images/line-casualty-new.png',
     imageAlt:
       'Corporate business office representing casualty insurance coverage',
     scope: 'Liability and casualty',
@@ -213,7 +213,7 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Engineering',
     summary:
       'Engineering reinsurance for construction, erection, machinery, equipment, and project-related risks where technical controls, testing phases, and contract conditions are visible.',
-    image: '/images/line-engineering.jpg',
+    image: '/images/line-engineering.png',
     imageAlt:
       'Construction site with infrastructure and equipment representing engineering insurance',
     scope: 'Construction and engineering',
@@ -300,7 +300,7 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Marine',
     summary:
       'Marine reinsurance for cargo, transit, project cargo, stock throughput, and related logistics exposures where route, storage, and accumulation controls are understood.',
-    image: '/images/line-marine.jpg',
+    image: '/images/line-marine.png',
     imageAlt:
       'Cargo ships and maritime vessels representing marine insurance coverage',
     scope: 'Marine cargo and transit',
@@ -387,7 +387,7 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Bonds/Surety',
     summary:
       'Bonds and surety reinsurance for bid, performance, advance payment, maintenance, and contract guarantee obligations linked to public, private, and infrastructure works.',
-    image: '/images/line-bonds.jpg',
+    image: '/images/line-bonds.png',
     imageAlt:
       'Financial documents and bonds representing surety and contract insurance',
     scope: 'Contract bonds and surety',
