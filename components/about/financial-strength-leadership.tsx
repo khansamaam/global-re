@@ -167,7 +167,7 @@ export function FinancialStrengthLeadership() {
             <SectionHeading
               eyebrow="Financial year portfolio"
               title="FY2025 Financial Highlights"
-              description="A concise view of audited financial highlights, portfolio reach, and underwriting discipline from the company profile."
+              description="A concise view of financial highlights, portfolio reach, and underwriting discipline from the company profile."
               className="max-w-4xl"
             />
             <p className="text-sm leading-relaxed text-muted-foreground lg:text-right">

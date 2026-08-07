@@ -512,7 +512,7 @@ export const industryFocus = [
 export const financialYearPortfolio = {
   year: 'FY2025',
   total: 'USD 33.4M',
-  metric: 'Audited combined insurance revenue, up 17% from FY2024',
+  metric: 'Combined insurance revenue, up 17% from FY2024',
   highlights: [
     {
       label: 'Insurance revenue',
@@ -527,12 +527,12 @@ export const financialYearPortfolio = {
     {
       label: 'Total equity',
       value: 'USD 437.2M',
-      note: 'FY2025 audited combined position',
+      note: 'FY2025 combined position',
     },
     {
       label: 'Total assets',
       value: 'USD 530.7M',
-      note: 'Latest audited position',
+      note: 'Latest position',
     },
   ],
   portfolioReach: [
@@ -651,43 +651,43 @@ export const financialYearPortfolio = {
     },
   ],
   sourceNote:
-    'Financial highlights are drawn from the FY2025 audited company profile. Where the profile does not disclose a full split, the chart labels state the disclosed basis.',
+    'Financial highlights are drawn from the FY2025 company profile. Where the profile does not disclose a full split, the chart labels state the disclosed basis.',
 }
 
 export const previousYearFinancials = {
   year: 'FY2025',
   title: 'Previous financial year',
-  status: 'Audited combined profile',
+  status: 'Combined profile',
   description:
-    'Audited FY2025 financial highlights with FY2024 comparatives for cedants, brokers, and counterparties reviewing Global RE.',
+    'FY2025 financial highlights with FY2024 comparatives for cedants, brokers, and counterparties reviewing Global RE.',
   documents: [
     {
       title: 'Insurance revenue',
       value: 'USD 33.4M',
       description:
-        'Up 17% from USD 28.4M in FY2024 on an audited combined basis.',
-      status: 'FY2025 audited',
+        'Up 17% from USD 28.4M in FY2024 on a combined basis.',
+      status: 'FY2025',
     },
     {
       title: 'Net insurance result',
       value: 'USD 4.6M',
       description:
         'Up 57% from USD 2.9M in FY2024, reflecting improved insurance result.',
-      status: 'FY2025 audited',
+      status: 'FY2025',
     },
     {
       title: 'Total equity',
       value: 'USD 437.2M',
       description:
-        'Audited combined equity position, with the profile presented alongside liabilities and liquidity.',
-      status: 'FY2025 audited',
+        'Combined equity position, with the profile presented alongside liabilities and liquidity.',
+      status: 'FY2025',
     },
     {
       title: 'Total assets',
       value: 'USD 530.7M',
       description:
-        'Latest audited combined asset position for the previous financial year.',
-      status: 'FY2025 audited',
+        'Latest combined asset position for the previous financial year.',
+      status: 'FY2025',
     },
   ],
   note:

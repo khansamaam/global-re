@@ -113,7 +113,7 @@ export default function InvestorsPage() {
               </p>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Previous financial year materials can be reviewed as part of
-                counterparty diligence. The figures below are drawn from the audited
+                counterparty diligence. The figures below are drawn from the
                 combined FY2025 profile with FY2024 comparatives where stated.
               </p>
               <Button

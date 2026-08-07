@@ -75,7 +75,7 @@ export function FinancialYearPortfolioCard({
         {isFull && (
           <p className="text-sm leading-relaxed text-muted-foreground lg:text-right">
             A concise view of scale, capital position, portfolio reach, and disciplined
-            participation from the FY2025 audited company profile.
+            participation from the FY2025 company profile.
           </p>
         )}
       </div>
