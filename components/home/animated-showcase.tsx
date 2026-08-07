@@ -70,7 +70,7 @@ export function AnimatedShowcase() {
         <div className="showcase-hero-glow" aria-hidden="true" />
         <div className="relative z-10 w-full">
           <p className="text-xs font-semibold uppercase tracking-wider text-white/50">
-            Net Premium Income Growth
+            Net Premium Income Trend
           </p>
 
           {/* Animated Line Chart */}
