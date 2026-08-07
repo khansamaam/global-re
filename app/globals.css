@@ -259,7 +259,7 @@
 @keyframes home-section-reveal {
   from {
     opacity: 0;
-    filter: blur(18px);
+    filter: blur(8px);
     transform: translate3d(0, 96px, 0) scale(0.98);
   }
   to {
@@ -491,7 +491,7 @@
     .home-scroll-page > section:not(:first-of-type) {
       animation: home-section-reveal both;
       animation-timeline: view();
-      animation-range: entry 0% cover 34%;
+      animation-range: entry 0% cover 50%;
       will-change: opacity, filter, transform;
     }
 
