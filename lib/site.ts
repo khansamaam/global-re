@@ -712,7 +712,7 @@ export const companySnapshot = [
   },
   {
     label: 'Footprint',
-    value: 'MENA, Africa & Asia',
+    value: 'MENA, Africa, Asia, LATAM, USA & Europe',
     note: 'Expanding regional and international reach',
   },
 ]

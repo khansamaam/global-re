@@ -74,7 +74,7 @@ export function FinancialStrengthLeadership() {
             <SectionHeading
               eyebrow="Company overview"
               title="Focused non-life reinsurance and advisory"
-              description="Founded in 2022, Global Re is a closely held specialist reinsurer providing non-life reinsurance and advisory solutions across MENA, Africa, Asia, and expanding international markets."
+              description="Founded in 2022, Global Re is a closely held specialist reinsurer providing non-life reinsurance and advisory solutions across MENA, Africa, Asia, LATAM, USA, Europe, and expanding international markets."
             />
             <div className="grid gap-4 sm:grid-cols-2">
               {companySnapshot.map((item) => (
