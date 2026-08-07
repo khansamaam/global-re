@@ -638,10 +638,10 @@ export const financialYearPortfolio = {
   ],
   premiumTrend: [
     {
-      year: '2023',
-      value: 116,
-      valueLabel: 'USD 116M',
-      note: 'Concentrated, opportunistic book',
+      year: '2024',
+      value: 28,
+      valueLabel: 'USD 28M',
+      note: 'Deliberate rebalancing toward quality',
     },
     {
       year: '2025',
