@@ -68,9 +68,30 @@ export function MouseGlow({ className }: { className?: string }) {
       })
     }
 
-    container.addEventListener('pointermove', moveGlow)
+    const resetOnLeave = () => {
+      gsap.to(glow, {
+        autoAlpha: 0,
+        duration: 0.6,
+        ease: 'power2.inOut',
+      })
 
-    return () => container.removeEventListener('pointermove', moveGlow)
+      parallaxTargets.forEach((target) => {
+        gsap.to(target, {
+          x: 0,
+          y: 0,
+          duration: 0.8,
+          ease: 'power2.inOut',
+        })
+      })
+    }
+
+    container.addEventListener('pointermove', moveGlow)
+    container.addEventListener('pointerleave', resetOnLeave)
+
+    return () => {
+      container.removeEventListener('pointermove', moveGlow)
+      container.removeEventListener('pointerleave', resetOnLeave)
+    }
   }, [])
 
   return (
