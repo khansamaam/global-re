@@ -30,7 +30,7 @@ export const insights: Insight[] = [
     readingTime: '11 min',
     author: 'Analytics team',
     authorRole: 'Global RE Risk Science',
-    image: '/images/insight-cyber.png',
+    image: '/images/insight-cyber-new.webp',
     imageAlt: 'Dark data centre corridor lined with server racks lit in teal and indigo',
     featured: true,
     signals: [
@@ -72,7 +72,7 @@ export const insights: Insight[] = [
     readingTime: '9 min',
     author: 'Property underwriting team',
     authorRole: 'Global RE Underwriting',
-    image: '/images/insight-climate.png',
+    image: '/images/insight-wildfire.webp',
     imageAlt: 'Aerial view of a braided river delta with teal channels and gold sediment banks',
     featured: true,
     signals: [
@@ -114,8 +114,8 @@ export const insights: Insight[] = [
     readingTime: '7 min',
     author: 'Underwriting committee',
     authorRole: 'Global RE Underwriting',
-    image: '/images/hero-global.png',
-    imageAlt: 'Global market map with illuminated route lines and financial network detail',
+    image: '/images/insight-renewals.webp',
+    imageAlt: 'Business renewal and contract negotiation setting',
     signals: [
       'Risk-adjusted pricing movement',
       'Attachment point discipline',
@@ -237,8 +237,8 @@ export const insights: Insight[] = [
     readingTime: '10 min',
     author: 'Engineering underwriting team',
     authorRole: 'Global RE Underwriting',
-    image: '/images/insight-climate.png',
-    imageAlt: 'Aerial view of engineered land and water channels with project terrain detail',
+    image: '/images/insight-engineering.webp',
+    imageAlt: 'Construction and engineering project infrastructure',
     signals: [
       'Project stage and critical path',
       'Testing and commissioning controls',
@@ -278,8 +278,8 @@ export const insights: Insight[] = [
     readingTime: '8 min',
     author: 'Accounting and technical team',
     authorRole: 'Global RE Technical Accounting',
-    image: '/images/about-team.png',
-    imageAlt: 'Professional team reviewing documents in a corporate office',
+    image: '/images/insight-ifrs.webp',
+    imageAlt: 'Financial accounting and compliance documentation',
     signals: [
       'Contract boundary evidence',
       'Risk transfer documentation',
