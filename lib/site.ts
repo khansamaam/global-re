@@ -39,9 +39,9 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Property',
     summary:
       'Property reinsurance for commercial, industrial, and project-related assets, with attention to physical damage, business interruption, and catastrophe aggregation.',
-    image: '/images/line-property.png',
+    image: '/images/line-property-new.jpg',
     imageAlt:
-      'Satellite view of a hurricane system spiralling over open ocean near a coastline',
+      'Modern commercial building skyline representing property insurance coverage',
     scope: 'Commercial and industrial property',
     focus: 'Commercial assets, industrial schedules, energy assets, and catastrophe-exposed portfolios',
     treatyTypes: ['Facultative', 'Treaty', 'Quota share', 'Excess of loss', 'Catastrophe'],
@@ -126,9 +126,9 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Casualty',
     summary:
       'Casualty reinsurance for general liability, products liability, employers liability, and excess liability exposures where jurisdiction, wording, and claims environment are understood.',
-    image: '/images/line-casualty.png',
+    image: '/images/line-casualty-new.jpg',
     imageAlt:
-      'Automated container terminal at blue hour with gantry cranes and ordered transport lanes',
+      'Corporate business office representing casualty insurance coverage',
     scope: 'Liability and casualty',
     focus: 'Commercial liability, project liability, products exposure, and excess casualty layers',
     treatyTypes: ['Facultative', 'Treaty', 'Quota share', 'Excess of loss', 'Clash'],
@@ -213,9 +213,9 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Engineering',
     summary:
       'Engineering reinsurance for construction, erection, machinery, equipment, and project-related risks where technical controls, testing phases, and contract conditions are visible.',
-    image: '/images/line-specialty.png',
+    image: '/images/line-engineering.jpg',
     imageAlt:
-      'Offshore energy infrastructure seen from above in calm blue water at sunrise',
+      'Construction site with infrastructure and equipment representing engineering insurance',
     scope: 'Construction and engineering',
     focus: 'CAR, EAR, machinery breakdown, project equipment, testing, and delay-sensitive works',
     treatyTypes: ['Facultative', 'Treaty', 'Quota share', 'Excess of loss', 'Project-specific'],
@@ -300,9 +300,9 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Marine',
     summary:
       'Marine reinsurance for cargo, transit, project cargo, stock throughput, and related logistics exposures where route, storage, and accumulation controls are understood.',
-    image: '/images/line-specialty.png',
+    image: '/images/line-marine.jpg',
     imageAlt:
-      'Offshore energy infrastructure seen from above in calm blue water at sunrise',
+      'Cargo ships and maritime vessels representing marine insurance coverage',
     scope: 'Marine cargo and transit',
     focus: 'Goods in transit, project cargo, logistics, storage, and marine-related project interfaces',
     treatyTypes: ['Facultative', 'Treaty', 'Open cover', 'Quota share', 'Excess of loss'],
@@ -387,9 +387,9 @@ export const businessLines: BusinessLine[] = [
     shortName: 'Bonds/Surety',
     summary:
       'Bonds and surety reinsurance for bid, performance, advance payment, maintenance, and contract guarantee obligations linked to public, private, and infrastructure works.',
-    image: '/images/line-specialty.png',
+    image: '/images/line-bonds.jpg',
     imageAlt:
-      'Offshore energy infrastructure seen from above in calm blue water at sunrise',
+      'Financial documents and bonds representing surety and contract insurance',
     scope: 'Contract bonds and surety',
     focus: 'Contractors, infrastructure, public works, commercial obligations, and performance security',
     treatyTypes: ['Facultative', 'Treaty', 'Quota share', 'Excess of loss', 'Bond facility'],
