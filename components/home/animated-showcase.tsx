@@ -103,14 +103,14 @@ export function AnimatedShowcase() {
               {/* Area under curve */}
               <path
                 className="showcase-line-area"
-                d="M 10 70 Q 30 64, 50 60 Q 70 50, 90 35 L 90 100 L 10 100 Z"
+                d="M 10 40 Q 30 58, 50 75 Q 70 65, 90 55 L 90 100 L 10 100 Z"
                 fill="url(#lineGradient)"
               />
 
               {/* Main line */}
               <path
                 className="showcase-line-path"
-                d="M 10 70 Q 30 64, 50 60 Q 70 50, 90 35"
+                d="M 10 40 Q 30 58, 50 75 Q 70 65, 90 55"
                 fill="none"
                 stroke="rgb(52, 211, 153)"
                 strokeWidth="2.5"
@@ -120,9 +120,9 @@ export function AnimatedShowcase() {
 
             {/* Data points */}
             {[
-              { x: 10, y: 70, year: '2024', amount: '$24.1M', note: 'Full Year', labelBelow: true },
-              { x: 50, y: 60, year: '2025', amount: '$15.1M', note: 'Full Year', labelBelow: false },
-              { x: 90, y: 35, year: '2026', amount: '$18.9M', note: 'Projected: $28M+', labelBelow: true },
+              { x: 10, y: 40, year: '2024', amount: '$24.1M', note: 'Full Year', labelBelow: true },
+              { x: 50, y: 75, year: '2025', amount: '$15.1M', note: 'Full Year', labelBelow: false },
+              { x: 90, y: 55, year: '2026', amount: '$18.9M', note: 'Projected: $28M+', labelBelow: true },
             ].map((point, i) => (
               <div
                 key={point.year}
