@@ -63,17 +63,17 @@ export function PortfolioMix() {
                 data-gsap-delay={index * 0.05}
               >
                 <div className="flex items-center justify-between gap-4">
-                  <span className="font-display text-4xl font-bold text-brand-indigo/30">
+                  <span className="font-display text-4xl font-bold text-brand-indigo/60">
                     {step.label}
                   </span>
                   <span className="grid size-11 place-items-center rounded-md border border-border bg-muted/45 text-brand-teal">
                     <step.icon className="size-5" aria-hidden="true" />
                   </span>
                 </div>
-                <h3 className="mt-10 font-display text-2xl font-bold text-card-foreground">
+                <h3 className="mt-10 font-display text-2xl font-bold text-foreground">
                   {step.title}
                 </h3>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-4 text-sm leading-relaxed text-foreground/70">
                   {step.body}
                 </p>
               </article>
