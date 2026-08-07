@@ -151,7 +151,7 @@ export function AnimatedShowcase() {
             ))}
           </div>
 
-          <div className="mt-6 flex items-center justify-center gap-1.5 text-emerald-400">
+          <div className="mt-8 flex items-center justify-center gap-1.5 text-emerald-400">
             <TrendingUp className="size-3.5" />
             <span className="text-xs font-semibold tracking-wide">
               Strong 2026 momentum - YTD exceeds 2025
