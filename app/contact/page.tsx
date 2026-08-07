@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Building2, Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import { PageHero } from '@/components/page-hero'
 import { SectionHeading } from '@/components/section-heading'
 import { Button } from '@/components/ui/button'
-import { businessLines, offices, site } from '@/lib/site'
+import { businessLines, site } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -135,64 +135,6 @@ export default function ContactPage() {
                 </Button>
               </div>
             </form>
-          </div>
-        </div>
-      </section>
-
-      <section id="offices" className="border-b border-border bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <SectionHeading
-            eyebrow="Offices"
-            title="Headquarters, representative office, and registered details"
-          />
-          <div className="mt-14 grid gap-6 lg:grid-cols-3">
-            {offices.map((office, index) => (
-              <article
-                key={`${office.city}-${office.role}`}
-                style={{
-                  animationDelay: `${index * 80}ms`,
-                }}
-                className="rounded-lg border border-border bg-card p-8 animate-fade-up transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
-              >
-                <Building2 className="size-6 text-brand-teal" aria-hidden="true" />
-                <p className="mt-5 font-display text-2xl font-bold text-card-foreground">
-                  {office.city}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {office.role}
-                </p>
-                <p className="eyebrow mt-5 text-muted-foreground">{office.region}</p>
-              </article>
-            ))}
-          </div>
-          <div className="mt-10 rounded-lg border border-border bg-card p-8 animate-fade-up animation-delay-300 transition-shadow duration-300 hover:shadow-lg">
-            <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
-              <div className="max-w-2xl">
-                <div className="flex items-center gap-3">
-                  <MapPin className="size-5 text-brand-teal" aria-hidden="true" />
-                  <h3 className="font-display text-xl font-bold text-card-foreground">
-                    Dubai representative office
-                  </h3>
-                </div>
-                <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
-                  {site.representativeOffice}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Headquarters: {site.hq}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Registered office: {site.registeredOffice}
-                </p>
-              </div>
-              <Button
-                size="lg"
-                className="h-12 bg-brand-indigo px-6 text-on-dark hover:bg-brand-indigo/90"
-                nativeButton={false}
-                render={<Link href={`mailto:${site.underwritingEmail}`} />}
-              >
-                Email Underwriting
-              </Button>
-            </div>
           </div>
         </div>
       </section>
